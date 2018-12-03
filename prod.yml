@@ -1,0 +1,18 @@
+version: '2'
+services:
+  dockerapp:
+    extends:
+      file: common.yml
+      service: dockerapp
+    image: fnej/dockerapp
+
+  socketservice:
+    extends:
+      file: common.yml
+      service: socketservice
+    image: fnej/socketservice
+
+  redis:
+    extends:
+      file: common.yml
+      service: redis
